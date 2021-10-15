@@ -1,0 +1,45 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: {
+    typeNamePlural: 'Incidents',
+    typeName: 'Incident',
+    title: {
+        type: #STANDARD,
+        value: 'Description'
+    },
+    description: {
+        type: #STANDARD,
+        value: 'TicketNo'
+    }
+}
+annotate view ZC_CNG_IncidentN with
+{
+  @UI.facet: [
+              { label: 'Ticket Information', id: 'GeneralInfo', type: #COLLECTION, position: 10 },
+              { label: 'General', purpose: #STANDARD, position: 10, type: #IDENTIFICATION_REFERENCE, parentId: 'GeneralInfo' }
+             ]
+
+  @UI.identification: [{ position: 10 }]
+  IncidentUUID;
+  
+  @UI.identification: [{ position: 20 }]
+  @UI.lineItem: [ 
+    { position: 10 },
+    { type: #FOR_ACTION, dataAction: 'approve_incident', label: 'Approve', position: 10 },
+    { type: #FOR_ACTION, dataAction: 'reject_incident', label: 'Reject', position: 20 } 
+  ]   
+  TicketNo;
+
+  @UI.identification: [{ position: 30 }]
+  @UI.lineItem: [{ position: 20 }]
+  RaisedBy;
+
+  @UI.identification: [{ position: 40 }]
+  @UI.lineItem: [{ position: 30 }]
+  Description;
+
+  @UI.identification: [{ position: 50 }]
+  @UI.lineItem: [{ position: 40 }]
+  Status;
+
+}

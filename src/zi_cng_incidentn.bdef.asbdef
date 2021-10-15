@@ -1,0 +1,31 @@
+managed implementation in class zbp_i_cng_incidentn unique;
+strict;
+
+define behavior for ZI_CNG_IncidentN alias Incident
+persistent table zcng_incident_n
+with additional save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  field ( readonly, numbering : managed ) IncidentUUID;
+  field ( readonly ) TicketNo, RaisedBy, Status;
+
+  create;
+  update;
+  delete;
+
+  action ( features : instance ) approve_incident result [1] $self;
+  action ( features : instance )reject_incident result [1] $self;
+
+  determination set_default_values on modify { create; }
+
+  mapping for zcng_incident_n
+  {
+    IncidentUUID = incident_uuid;
+    Description  = description;
+    RaisedBy     = raised_by;
+    Status       = status;
+    TicketNo     = ticket_no;
+  }
+}
