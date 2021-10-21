@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for Incident (UUID)'
+define service ZCNG_RAP_IncidentN {
+  expose ZC_CNG_IncidentN;
+}
