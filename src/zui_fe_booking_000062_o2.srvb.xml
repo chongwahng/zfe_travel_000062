@@ -4,9 +4,8 @@
   <asx:values>
    <SRVB>
     <METADATA>
-     <NAME>ZUI_CNG_INCIDENTN_O2</NAME>
+     <NAME>ZUI_FE_BOOKING_000062_O2</NAME>
      <TYPE>SRVB/SVB</TYPE>
-     <DESCRIPTION>Service binding for Incident (UUID) V2</DESCRIPTION>
      <LANGUAGE>EN</LANGUAGE>
      <LINKS>
       <item>
@@ -15,7 +14,7 @@
        <TITLE>Historic versions</TITLE>
       </item>
       <item>
-       <HREF>/sap/bc/adt/businessservices/odatav2/ZUI_CNG_INCIDENTN_O2</HREF>
+       <HREF>/sap/bc/adt/businessservices/odatav2/ZUI_FE_BOOKING_000062_O2</HREF>
        <REL>http://www.sap.com/categories/odatav2</REL>
        <TYPE>application/vnd.sap.adt.businessservices.odatav2.v2+xml</TYPE>
        <TITLE>ODATAV2</TITLE>
@@ -33,24 +32,24 @@
        <TITLE>SemanticVersion</TITLE>
       </item>
      </LINKS>
-     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_LANGUAGE>DE</MASTER_LANGUAGE>
     </METADATA>
     <CONTENT>
      <BIND_TYPE_IMPL>
-      <NAME>ZUI_CNG_INCIDENTN_O2</NAME>
+      <NAME>ZUI_FE_BOOKING_000062_O2</NAME>
      </BIND_TYPE_IMPL>
      <BIND_TYPE>ODATA</BIND_TYPE>
      <BIND_TYPE_VERSION>V2</BIND_TYPE_VERSION>
      <SERVICES>
       <item>
-       <SERVICE_NAME>ZUI_CNG_INCIDENTN_O2</SERVICE_NAME>
+       <SERVICE_NAME>ZUI_FE_BOOKING_000062_O2</SERVICE_NAME>
        <SERVICE_CONTENT>
         <item>
          <SERVICE_VERSION>0001</SERVICE_VERSION>
          <SRVD_REF>
-          <URI>/sap/bc/adt/ddic/srvd/sources/zcng_rap_incidentn</URI>
+          <URI>/sap/bc/adt/ddic/srvd/sources/zfe_booking_analytics_000062</URI>
           <TYPE>SRVD/SRV</TYPE>
-          <NAME>ZCNG_RAP_INCIDENTN</NAME>
+          <NAME>ZFE_BOOKING_ANALYTICS_000062</NAME>
          </SRVD_REF>
         </item>
        </SERVICE_CONTENT>

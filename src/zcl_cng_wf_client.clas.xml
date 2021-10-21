@@ -3,15 +3,13 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZBP_I_CNG_INCIDENTN</CLSNAME>
+    <CLSNAME>ZCL_CNG_WF_CLIENT</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Behavior Implementation for ZI_CNG_INCIDENTN</DESCRIPT>
-    <CATEGORY>06</CATEGORY>
+    <DESCRIPT>Workflow test client</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
-    <CLSDEFINT>ZI_CNG_INCIDENTN</CLSDEFINT>
    </VSEOCLASS>
   </asx:values>
  </asx:abap>

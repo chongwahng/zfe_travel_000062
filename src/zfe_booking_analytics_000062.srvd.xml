@@ -3,12 +3,11 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <SRVD>
-    <NAME>ZCNG_RAP_INCIDENTN</NAME>
+    <NAME>ZFE_BOOKING_ANALYTICS_000062</NAME>
     <TYPE>SRVD/SRV</TYPE>
-    <DESCRIPTION>Service definition for Incident (UUID)</DESCRIPTION>
     <LANGUAGE>EN</LANGUAGE>
-    <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
-    <SOURCE_URI>./zcng_rap_incidentn/source/main</SOURCE_URI>
+    <MASTER_LANGUAGE>DE</MASTER_LANGUAGE>
+    <SOURCE_URI>./zfe_booking_analytics_000062/source/main</SOURCE_URI>
     <SOURCE_TYPE>ABAP_SOURCE</SOURCE_TYPE>
     <SOURCE_ORIGIN_DESCRIPTION>ABAP Development Tools</SOURCE_ORIGIN_DESCRIPTION>
     <SRVD_SOURCE_TYPE>S</SRVD_SOURCE_TYPE>
