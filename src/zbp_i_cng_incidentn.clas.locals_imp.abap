@@ -171,6 +171,7 @@ CLASS lsc_ZI_CNG_INCIDENTN IMPLEMENTATION.
             )->add_member( 'RaisedBy' )->add_string( |{ is_incident-RaisedBy }|
             )->add_member( 'Description' )->add_string( |{ is_incident-Description }|
             )->add_member( 'Status' )->add_string( |{ is_incident-Status }|
+            )->add_member( 'caller' )->add_string( |RAP|
             )->add_member( 'approvalStep' )->begin_object(
             )->add_member( 'decision' )->add_string( ||
             )->end_object(
@@ -229,7 +230,8 @@ CLASS lsc_ZI_CNG_INCIDENTN IMPLEMENTATION.
         SPLIT lv_response AT '"' INTO TABLE DATA(lt_response).
         rv_result = |Bearer | && VALUE #( lt_response[ 4 ] OPTIONAL ).
 
-      CATCH cx_web_http_client_error.
+      CATCH cx_web_http_client_error INTO DATA(lx_client_err).
+        rv_result = lx_client_err->get_longtext(   ).
         "handle exception
     ENDTRY.
   ENDMETHOD.
